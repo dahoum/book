@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" 
+  "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:RENEWABLE-ENERGY-TECH-BOOK-001"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  
+  <docTitle>
+    <text>Renewable Energy: Technical Foundations and Applications</text>
+  </docTitle>
+  
+  <docAuthor>
+    <text>IJ Verlag Technical Publications</text>
+  </docAuthor>
+  
+  <navMap>
+    <!-- Cover -->
+    <navPoint id="nav-cover" playOrder="1">
+      <navLabel>
+        <text>Cover</text>
+      </navLabel>
+      <content src="content/cover.xhtml"/>
+    </navPoint>
+    
+    <!-- Introduction -->
+    <navPoint id="nav-intro" playOrder="2">
+      <navLabel>
+        <text>Introduction</text>
+      </navLabel>
+      <content src="content/introduction.xhtml"/>
+    </navPoint>
+    
+    <!-- Sub-Book 1: Solar Energy -->
+    <navPoint id="nav-sb1" playOrder="3">
+      <navLabel>
+        <text>Part I: Solar Energy Fundamentals</text>
+      </navLabel>
+      <content src="content/subbook1/subbook1.xhtml"/>
+      <navPoint id="nav-sb1-ch1" playOrder="4">
+        <navLabel>
+          <text>Chapter 1: Photovoltaic Principles</text>
+        </navLabel>
+        <content src="content/subbook1/chapter1.xhtml"/>
+        <navPoint id="nav-sb1-ch1-s1" playOrder="5">
+          <navLabel><text>1.1 Semiconductor Physics</text></navLabel>
+          <content src="content/subbook1/chapter1.xhtml#section-1-1"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch1-s2" playOrder="6">
+          <navLabel><text>1.2 Solar Spectrum</text></navLabel>
+          <content src="content/subbook1/chapter1.xhtml#section-1-2"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch1-s3" playOrder="7">
+          <navLabel><text>1.3 PV Cell Operation</text></navLabel>
+          <content src="content/subbook1/chapter1.xhtml#section-1-3"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch1-s4" playOrder="8">
+          <navLabel><text>1.4 Efficiency Limits</text></navLabel>
+          <content src="content/subbook1/chapter1.xhtml#section-1-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb1-ch2" playOrder="9">
+        <navLabel>
+          <text>Chapter 2: Solar Panel Technologies</text>
+        </navLabel>
+        <content src="content/subbook1/chapter2.xhtml"/>
+        <navPoint id="nav-sb1-ch2-s1" playOrder="10">
+          <navLabel><text>2.1 Monocrystalline Silicon</text></navLabel>
+          <content src="content/subbook1/chapter2.xhtml#section-2-1"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch2-s2" playOrder="11">
+          <navLabel><text>2.2 Polycrystalline Silicon</text></navLabel>
+          <content src="content/subbook1/chapter2.xhtml#section-2-2"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch2-s3" playOrder="12">
+          <navLabel><text>2.3 Thin-Film Technologies</text></navLabel>
+          <content src="content/subbook1/chapter2.xhtml#section-2-3"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch2-s4" playOrder="13">
+          <navLabel><text>2.4 Perovskite Cells</text></navLabel>
+          <content src="content/subbook1/chapter2.xhtml#section-2-4"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch2-s5" playOrder="14">
+          <navLabel><text>2.5 Bifacial Panels</text></navLabel>
+          <content src="content/subbook1/chapter2.xhtml#section-2-5"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb1-ch3" playOrder="15">
+        <navLabel>
+          <text>Chapter 3: System Design and Installation</text>
+        </navLabel>
+        <content src="content/subbook1/chapter3.xhtml"/>
+        <navPoint id="nav-sb1-ch3-s1" playOrder="16">
+          <navLabel><text>3.1 Site Assessment</text></navLabel>
+          <content src="content/subbook1/chapter3.xhtml#section-3-1"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch3-s2" playOrder="17">
+          <navLabel><text>3.2 Array Configuration</text></navLabel>
+          <content src="content/subbook1/chapter3.xhtml#section-3-2"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch3-s3" playOrder="18">
+          <navLabel><text>3.3 Mounting Systems</text></navLabel>
+          <content src="content/subbook1/chapter3.xhtml#section-3-3"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch3-s4" playOrder="19">
+          <navLabel><text>3.4 Electrical Integration</text></navLabel>
+          <content src="content/subbook1/chapter3.xhtml#section-3-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb1-ch4" playOrder="20">
+        <navLabel>
+          <text>Chapter 4: Performance and Economics</text>
+        </navLabel>
+        <content src="content/subbook1/chapter4.xhtml"/>
+        <navPoint id="nav-sb1-ch4-s1" playOrder="21">
+          <navLabel><text>4.1 Energy Yield Modeling</text></navLabel>
+          <content src="content/subbook1/chapter4.xhtml#section-4-1"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch4-s2" playOrder="22">
+          <navLabel><text>4.2 Degradation and Lifespan</text></navLabel>
+          <content src="content/subbook1/chapter4.xhtml#section-4-2"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch4-s3" playOrder="23">
+          <navLabel><text>4.3 Cost Analysis</text></navLabel>
+          <content src="content/subbook1/chapter4.xhtml#section-4-3"/>
+        </navPoint>
+        <navPoint id="nav-sb1-ch4-s4" playOrder="24">
+          <navLabel><text>4.4 Incentives and Policy</text></navLabel>
+          <content src="content/subbook1/chapter4.xhtml#section-4-4"/>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    
+    <!-- Sub-Book 2: Wind Energy -->
+    <navPoint id="nav-sb2" playOrder="25">
+      <navLabel>
+        <text>Part II: Wind Energy Systems</text>
+      </navLabel>
+      <content src="content/subbook2/subbook2.xhtml"/>
+      <navPoint id="nav-sb2-ch1" playOrder="26">
+        <navLabel>
+          <text>Chapter 5: Aerodynamics of Wind Turbines</text>
+        </navLabel>
+        <content src="content/subbook2/chapter1.xhtml"/>
+        <navPoint id="nav-sb2-ch1-s1" playOrder="27">
+          <navLabel><text>5.1 Betz Limit</text></navLabel>
+          <content src="content/subbook2/chapter1.xhtml#section-5-1"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch1-s2" playOrder="28">
+          <navLabel><text>5.2 Blade Design</text></navLabel>
+          <content src="content/subbook2/chapter1.xhtml#section-5-2"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch1-s3" playOrder="29">
+          <navLabel><text>5.3 Rotor Configuration</text></navLabel>
+          <content src="content/subbook2/chapter1.xhtml#section-5-3"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch1-s4" playOrder="30">
+          <navLabel><text>5.4 Wake Effects</text></navLabel>
+          <content src="content/subbook2/chapter1.xhtml#section-5-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb2-ch2" playOrder="31">
+        <navLabel>
+          <text>Chapter 6: Wind Turbine Technology</text>
+        </navLabel>
+        <content src="content/subbook2/chapter2.xhtml"/>
+        <navPoint id="nav-sb2-ch2-s1" playOrder="32">
+          <navLabel><text>6.1 Horizontal Axis Turbines</text></navLabel>
+          <content src="content/subbook2/chapter2.xhtml#section-6-1"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch2-s2" playOrder="33">
+          <navLabel><text>6.2 Vertical Axis Turbines</text></navLabel>
+          <content src="content/subbook2/chapter2.xhtml#section-6-2"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch2-s3" playOrder="34">
+          <navLabel><text>6.3 Generator Types</text></navLabel>
+          <content src="content/subbook2/chapter2.xhtml#section-6-3"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch2-s4" playOrder="35">
+          <navLabel><text>6.4 Pitch and Yaw Systems</text></navLabel>
+          <content src="content/subbook2/chapter2.xhtml#section-6-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb2-ch3" playOrder="36">
+        <navLabel>
+          <text>Chapter 7: Wind Farm Development</text>
+        </navLabel>
+        <content src="content/subbook2/chapter3.xhtml"/>
+        <navPoint id="nav-sb2-ch3-s1" playOrder="37">
+          <navLabel><text>7.1 Resource Assessment</text></navLabel>
+          <content src="content/subbook2/chapter3.xhtml#section-7-1"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch3-s2" playOrder="38">
+          <navLabel><text>7.2 Turbine Layout</text></navLabel>
+          <content src="content/subbook2/chapter3.xhtml#section-7-2"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch3-s3" playOrder="39">
+          <navLabel><text>7.3 Grid Connection</text></navLabel>
+          <content src="content/subbook2/chapter3.xhtml#section-7-3"/>
+        </navPoint>
+        <navPoint id="nav-sb2-ch3-s4" playOrder="40">
+          <navLabel><text>7.4 Environmental Impact</text></navLabel>
+          <content src="content/subbook2/chapter3.xhtml#section-7-4"/>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    
+    <!-- Sub-Book 3: Energy Storage & Grid Integration -->
+    <navPoint id="nav-sb3" playOrder="41">
+      <navLabel>
+        <text>Part III: Energy Storage and Grid Integration</text>
+      </navLabel>
+      <content src="content/subbook3/subbook3.xhtml"/>
+      <navPoint id="nav-sb3-ch1" playOrder="42">
+        <navLabel>
+          <text>Chapter 8: Battery Storage Technologies</text>
+        </navLabel>
+        <content src="content/subbook3/chapter1.xhtml"/>
+        <navPoint id="nav-sb3-ch1-s1" playOrder="43">
+          <navLabel><text>8.1 Lithium-Ion Batteries</text></navLabel>
+          <content src="content/subbook3/chapter1.xhtml#section-8-1"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch1-s2" playOrder="44">
+          <navLabel><text>8.2 Flow Batteries</text></navLabel>
+          <content src="content/subbook3/chapter1.xhtml#section-8-2"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch1-s3" playOrder="45">
+          <navLabel><text>8.3 Sodium-Sulfur Batteries</text></navLabel>
+          <content src="content/subbook3/chapter1.xhtml#section-8-3"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch1-s4" playOrder="46">
+          <navLabel><text>8.4 Compressed Air Storage</text></navLabel>
+          <content src="content/subbook3/chapter1.xhtml#section-8-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb3-ch2" playOrder="47">
+        <navLabel>
+          <text>Chapter 9: Mechanical and Thermal Storage</text>
+        </navLabel>
+        <content src="content/subbook3/chapter2.xhtml"/>
+        <navPoint id="nav-sb3-ch2-s1" playOrder="48">
+          <navLabel><text>9.1 Pumped Hydro Storage</text></navLabel>
+          <content src="content/subbook3/chapter2.xhtml#section-9-1"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch2-s2" playOrder="49">
+          <navLabel><text>9.2 Flywheel Storage</text></navLabel>
+          <content src="content/subbook3/chapter2.xhtml#section-9-2"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch2-s3" playOrder="50">
+          <navLabel><text>9.3 Thermal Energy Storage</text></navLabel>
+          <content src="content/subbook3/chapter2.xhtml#section-9-3"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch2-s4" playOrder="51">
+          <navLabel><text>9.4 Hydrogen Storage</text></navLabel>
+          <content src="content/subbook3/chapter2.xhtml#section-9-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb3-ch3" playOrder="52">
+        <navLabel>
+          <text>Chapter 10: Grid Integration</text>
+        </navLabel>
+        <content src="content/subbook3/chapter3.xhtml"/>
+        <navPoint id="nav-sb3-ch3-s1" playOrder="53">
+          <navLabel><text>10.1 Inverter Technology</text></navLabel>
+          <content src="content/subbook3/chapter3.xhtml#section-10-1"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch3-s2" playOrder="54">
+          <navLabel><text>10.2 Grid Stability</text></navLabel>
+          <content src="content/subbook3/chapter3.xhtml#section-10-2"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch3-s3" playOrder="55">
+          <navLabel><text>10.3 Power Quality</text></navLabel>
+          <content src="content/subbook3/chapter3.xhtml#section-10-3"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch3-s4" playOrder="56">
+          <navLabel><text>10.4 Microgrids</text></navLabel>
+          <content src="content/subbook3/chapter3.xhtml#section-10-4"/>
+        </navPoint>
+      </navPoint>
+      
+      <navPoint id="nav-sb3-ch4" playOrder="57">
+        <navLabel>
+          <text>Chapter 11: Smart Grid and Energy Management</text>
+        </navLabel>
+        <content src="content/subbook3/chapter4.xhtml"/>
+        <navPoint id="nav-sb3-ch4-s1" playOrder="58">
+          <navLabel><text>11.1 Demand Response</text></navLabel>
+          <content src="content/subbook3/chapter4.xhtml#section-11-1"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch4-s2" playOrder="59">
+          <navLabel><text>11.2 Energy Management Systems</text></navLabel>
+          <content src="content/subbook3/chapter4.xhtml#section-11-2"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch4-s3" playOrder="60">
+          <navLabel><text>11.3 AI in Grid Optimization</text></navLabel>
+          <content src="content/subbook3/chapter3.xhtml#section-11-3"/>
+        </navPoint>
+        <navPoint id="nav-sb3-ch4-s4" playOrder="61">
+          <navLabel><text>11.4 Virtual Power Plants</text></navLabel>
+          <content src="content/subbook3/chapter4.xhtml#section-11-4"/>
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    
+    <!-- Conclusion -->
+    <navPoint id="nav-conclusion" playOrder="62">
+      <navLabel>
+        <text>Conclusion: The Future of Renewable Energy</text>
+      </navLabel>
+      <content src="content/conclusion.xhtml"/>
+    </navPoint>
+    
+    <!-- Appendix -->
+    <navPoint id="nav-appendix" playOrder="63">
+      <navLabel>
+        <text>Appendix: Technical Data and References</text>
+      </navLabel>
+      <content src="content/appendix.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

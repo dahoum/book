@@ -1,0 +1,450 @@
+/* ============================================
+   EPUB-Specific Styles
+   Handles reader quirks and EPUB-specific features
+   ============================================ */
+
+/* Prevent kindle from adding its own margins */
+@page {
+  margin: 0;
+  padding: 0;
+}
+
+/* Kindle-specific overrides */
+*[class*="kindle"] {
+  display: none !important;
+}
+
+/* iBooks specific */
+body[class*="ibooks"] {
+  padding: 1em;
+}
+
+/* Kobo specific */
+body[class*="kobo"] {
+  padding: 1em;
+}
+
+/* Aldiko specific */
+body[class*="aldiko"] {
+  padding: 1em;
+}
+
+/* Prevent unwanted text indentation on first paragraph */
+p:first-child {
+  text-indent: 0;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* SVG handling */
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Prevent orphans and widows */
+p {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Better handling for small screens */
+@media (max-device-width: 800px) {
+  body {
+    font-size: 110%;
+  }
+  
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.6em; }
+  h3 { font-size: 1.3em; }
+}
+
+/* Ensure links are clickable */
+a {
+  -webkit-tap-highlight-color: rgba(74, 144, 164, 0.3);
+}
+
+/* Prevent double-tap zoom on images in mobile Safari */
+img, svg {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+/* Prevent long-press menu on links */
+a {
+  -webkit-user-select: none;
+}
+
+/* EPUB 3 page-break properties */
+[epub\:type="pagebreak"] {
+  page-break-before: always;
+}
+
+[epub\:type="toc"] {
+  page-break-inside: avoid;
+}
+
+[epub\:type="landmarks"] {
+  display: none;
+}
+
+[epub\:type="lof"] {
+  display: none;
+}
+
+[epub\:type="lot"] {
+  display: none;
+}
+
+/* Side-by-side figures for wide screens */
+@media (min-width: 800px) {
+  .figure-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .figure-group figure {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
+}
+
+/* Full-width figures for narrow screens */
+@media (max-width: 799px) {
+  .figure-group figure {
+    flex: 1 1 100%;
+  }
+}
+
+/* MathML handling */
+math {
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin: 0.5em 0;
+  display: block;
+  text-align: center;
+}
+
+mi, mo, mn {
+  font-style: italic;
+}
+
+/* Prevent text selection in EPUB readers that support it */
+::selection {
+  background: rgba(74, 144, 164, 0.3);
+  color: inherit;
+}
+
+/* Custom page breaks */
+.page-break {
+  page-break-before: always;
+}
+
+.page-break-inside-avoid {
+  page-break-inside: avoid;
+}
+
+/* Footnotes */
+.footnote {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 0.5em;
+}
+
+.footnote-link {
+  vertical-align: super;
+  font-size: 0.8em;
+}
+
+/* Table of Contents specific styles */
+.toc-title {
+  text-align: center;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 1em;
+  border: none;
+  padding: 0;
+}
+
+.toc-level-1 {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toc-level-1 > li {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.toc-level-1 > li > a {
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  padding: 0.3em 0;
+}
+
+.toc-level-2 {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.toc-level-2 > li {
+  margin: 0.3em 0;
+}
+
+.toc-level-2 > li > a {
+  display: block;
+  padding: 0.2em 0;
+  font-weight: normal;
+}
+
+.toc-level-3 {
+  list-style-type: none;
+  padding-left: 1.5em;
+}
+
+.toc-level-3 > li {
+  margin: 0.2em 0;
+}
+
+.toc-level-3 > li > a {
+  display: block;
+  padding: 0.1em 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.toc-level-3 > li > a:hover {
+  color: #4a90a4;
+}
+
+/* Cover page styling */
+.cover-page {
+  text-align: center;
+  padding: 2em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-title {
+  font-size: 3em;
+  font-weight: normal;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.cover-subtitle {
+  font-size: 1.5em;
+  color: #4a90a4;
+  margin: 0.5em 0;
+  font-style: italic;
+}
+
+.cover-author {
+  font-size: 1.2em;
+  color: #555;
+  margin: 1em 0;
+}
+
+.cover-publisher {
+  font-size: 1em;
+  color: #888;
+  margin: 0;
+}
+
+.cover-image {
+  max-width: 80%;
+  max-height: 60vh;
+  margin: 1em 0;
+}
+
+/* Sub-book introduction pages */
+.subbook-intro {
+  background-color: #f9f9f9;
+  padding: 1.5em;
+  border-left: 4px solid #4a90a4;
+}
+
+.subbook-title {
+  font-size: 2em;
+  color: #357a8a;
+  margin-bottom: 0.5em;
+}
+
+.subbook-description {
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Chapter styling */
+.chapter-title {
+  font-size: 1.8em;
+  border-bottom: 2px solid #4a90a4;
+  padding-bottom: 0.3em;
+  margin-top: 0;
+}
+
+.chapter-number {
+  color: #4a90a4;
+}
+
+/* Section numbering */
+.section-number {
+  color: #4a90a4;
+  font-weight: bold;
+}
+
+/* Consistent spacing for technical content */
+.function, .theorem, .proof, .algorithm {
+  margin: 1.5em 0;
+  padding: 1em;
+  border-left: 4px solid #4a90a4;
+}
+
+/* Code blocks with line numbers */
+.code-with-lines {
+  counter-reset: line;
+  padding-left: 3em;
+  border-left: 1px solid #ddd;
+}
+
+.code-with-lines code {
+  counter-reset: line;
+}
+
+.code-with-lines code > span {
+  display: block;
+  position: relative;
+}
+
+.code-with-lines code > span:before {
+  counter-increment: line;
+  content: counter(line);
+  position: absolute;
+  left: -3em;
+  color: #999;
+  text-align: right;
+  width: 2.5em;
+}
+
+/* Responsive tables for EPUB */
+@media (max-width: 600px) {
+  .responsive-table {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .responsive-table table {
+    width: auto;
+    min-width: 100%;
+  }
+}
+
+/* Dark mode support (for readers that support it) */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+  
+  code {
+    background-color: #2a2a2a;
+    color: #ff79c6;
+  }
+  
+  pre {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+  
+  blockquote {
+    border-left-color: #4a90a4;
+    color: #aaa;
+  }
+  
+  table {
+    background-color: #2a2a2a;
+  }
+  
+  th {
+    background-color: #357a8a;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #2a2a2a;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #1a1a1a;
+  }
+  
+  a {
+    color: #5cb8e6;
+  }
+  
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: #7cd4fc;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  body {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    border-color: #fff;
+  }
+  
+  a {
+    color: #ffff00;
+    text-decoration: underline;
+  }
+  
+  code {
+    background-color: #000;
+    color: #ffff00;
+    border: 2px solid #ffff00;
+  }
+  
+  pre {
+    background-color: #000;
+    border: 2px solid #ffff00;
+    color: #ffff00;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Chapter 1: Photovoltaic Principles</title>
+  <link rel="stylesheet" type="text/css" href="../../styles/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../../styles/epub.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <main>
+    <h1 id="chapter1" class="chapter-title">
+      <span class="chapter-number">Chapter 1</span>: Photovoltaic Principles
+    </h1>
+    
+    <div class="chapter-intro">
+      <p>
+        At the heart of every solar cell lies the photovoltaic effect—a quantum mechanical 
+        process that enables the direct conversion of light into electricity. This chapter 
+        explores the fundamental physics behind this remarkable phenomenon, from the 
+        behavior of light to the properties of semiconductor materials that make modern 
+        photovoltaics possible.
+      </p>
+    </div>
+    
+    <h2 id="section-1-1">1.1 Semiconductor Physics</h2>
+    
+    <p>
+      To understand how photovoltaic cells work, we must first examine the properties of 
+      <span class="term">semiconductor</span> materials. Semiconductors occupy a middle ground between 
+      conductors (like metals) and insulators (like glass). Their unique electronic properties 
+      can be precisely controlled through a process called <span class="term">doping</span>.
+    </p>
+    
+    <h3 id="atomic-structure">Atomic Structure and Energy Bands</h3>
+    
+    <p>
+      In any material, electrons occupy discrete energy levels. In isolated atoms, these 
+      are sharp, well-defined levels. However, when atoms come together to form a solid, 
+      these individual energy levels broaden into <span class="term">energy bands</span>.
+    </p>
+    
+    <figure id="fig-energy-bands">
+      <img src="../../images/diagrams/pv-cell-diagram.svg" alt="Energy band diagram showing valence and conduction bands"/>
+      <figcaption>
+        <strong>Figure 1-1:</strong> Energy Band Structure in Materials
+        <p class="definition">
+          Comparison of energy band structures in conductors, semiconductors, and insulators.
+          The band gap (E<sub>g</sub>) determines the material's electrical properties.
+        </p>
+      </figcaption>
+    </figure>
+    
+    <p>
+      The two most important energy bands for semiconductor behavior are:
+    </p>
+    
+    <dl>
+      <dt><span class="term">Valence band</span></dt>
+      <dd>
+        The highest energy band that is completely or nearly completely filled with 
+        electrons at absolute zero temperature. Electrons in this band are bound to their 
+        parent atoms.
+      </dd>
+      
+      <dt><span class="term">Conduction band</span></dt>
+      <dd>
+        The lowest energy band that is empty (or nearly empty) at absolute zero. 
+        Electrons in this band are free to move throughout the material, enabling 
+        electrical conduction.
+      </dd>
+      
+      <dt><span class="term">Band gap (E<sub>g</sub>)</span></dt>
+      <dd>
+        The energy difference between the top of the valence band and the bottom of the 
+        conduction band. In semiconductors, this gap is typically between 0.1 eV and 4 eV.
+      </dd>
+    </dl>
+    
+    <div class="formula" id="eg-silicon">
+      <p>
+        For <span class="term">silicon</span> (Si), the most common PV material:
+      </p>
+      <p class="formula-number">E<sub>g,Si</sub> = 1.12 eV at 300 K</p>
+    </div>
+    
+    <h3 id="intrinsic-extrinsic">Intrinsic and Extrinsic Semiconductors</h3>
+    
+    <p>
+      A pure semiconductor with no impurities or defects is called an 
+      <span class="term">intrinsic semiconductor</span>. At temperatures above absolute zero, 
+      thermal energy can excite some electrons from the valence band to the conduction 
+      band, creating free electrons and leaving behind positively charged 
+      <span class="term">holes</span> in the valence band. Both electrons and holes can 
+      contribute to electrical conduction.
+    </p>
+    
+    <p>
+      The number of free electrons (and holes) in an intrinsic semiconductor is given by 
+      the <span class="term">intrinsic carrier concentration</span> (n<sub>i</sub>):
+    </p>
+    
+    <div class="formula" id="ni-formula">
+      <p>
+        n<sub>i</sub> = √(N<sub>C</sub> N<sub>V</sub>) exp(-E<sub>g</sub> / (2 k T))
+      </p>
+      <p class="definition">
+        where N<sub>C</sub> and N<sub>V</sub> are the effective density of states in the conduction 
+        and valence bands, k is Boltzmann's constant (8.617×10<sup>-5</sup> eV/K), and T is 
+        temperature in Kelvin.
+      </p>
+    </div>
+    
+    <p>
+      For silicon at room temperature (300 K), n<sub>i</sub> ≈ 1.0 × 10<sup>10</sup> cm<sup>-3</sup>.
+    </p>
+    
+    <p>
+      An <span class="term">extrinsic semiconductor</span> is one that has been intentionally 
+      <span class="term">doped</span> with small amounts of impurities to change its electrical 
+      properties. There are two types of doping:
+    </p>
+    
+    <div class="figure-group">
+      <figure id="fig-n-type">
+        <img src="../../images/diagrams/n-type-doping.svg" alt="N-type semiconductor doping with phosphorus"/>
+        <figcaption>
+          <strong>Figure 1-2a:</strong> N-type Doping
+        </figcaption>
+      </figure>
+      
+      <figure id="fig-p-type">
+        <img src="../../images/diagrams/p-type-doping.svg" alt="P-type semiconductor doping with boron"/>
+        <figcaption>
+          <strong>Figure 1-2b:</strong> P-type Doping
+        </figcaption>
+      </figure>
+    </div>
+    
+    <table id="tbl-doping">
+      <caption>Common Dopants for Silicon</caption>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Dopant Element</th>
+          <th>Valence Electrons</th>
+          <th>Effect</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>N-type</td>
+          <td>Phosphorus (P)</td>
+          <td>5</td>
+          <td>Donor - provides extra electrons</td>
+        </tr>
+        <tr>
+          <td>N-type</td>
+          <td>Arsenic (As)</td>
+          <td>5</td>
+          <td>Donor - provides extra electrons</td>
+        </tr>
+        <tr>
+          <td>P-type</td>
+          <td>Boron (B)</td>
+          <td>3</td>
+          <td>Acceptor - creates holes</td>
+        </tr>
+        <tr>
+          <td>P-type</td>
+          <td>Aluminum (Al)</td>
+          <td>3</td>
+          <td>Acceptor - creates holes</td>
+        </tr>
+        <tr>
+          <td>P-type</td>
+          <td>Gallium (Ga)</td>
+          <td>3</td>
+          <td>Acceptor - creates holes</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2 id="section-1-2">1.2 Solar Spectrum</h2>
+    
+    <p>
+      Sunlight reaching Earth's surface consists of electromagnetic radiation across a 
+      range of wavelengths. The <span class="term">solar spectrum</span> is approximately 
+      that of a blackbody at 5778 K (the temperature of the Sun's photosphere), modified 
+      by absorption in Earth's atmosphere.
+    </p>
+    
+    <figure id="fig-solar-spectrum">
+      <img src="../../images/charts/solar-spectrum.png" alt="Solar spectrum showing irradiance vs wavelength"/>
+      <figcaption>
+        <strong>Figure 1-3:</strong> AM1.5 Solar Spectrum
+        <p class="definition">
+          Standard solar spectrum at sea level with the sun at a 48.2° zenith angle 
+          (Air Mass 1.5). The spectrum extends from about 280 nm to 4000 nm, with peak 
+          irradiance near 500 nm.
+        </p>
+      </figcaption>
+    </figure>
+    
+    <p>
+      The most important parameter for PV applications is the <span class="term">solar 
+      irradiance</span>—the power per unit area received from the sun. At Earth's surface, 
+      under clear sky conditions, the maximum solar irradiance is approximately 
+      <span class="term">1000 W/m²</span> (known as one <span class="term">sun</span>).
+    </p>
+    
+    <div class="formula" id="solar-constant">
+      <p>
+        The <span class="term">solar constant</span> (G<sub>SC</sub>)—the extraterrestrial 
+        solar irradiance at the mean Earth-Sun distance—is approximately:
+      </p>
+      <p class="formula-number">G<sub>SC</sub> = 1367 W/m²</p>
+      <p class="definition">
+        About 30% of this energy is reflected or absorbed by Earth's atmosphere under 
+        clear sky conditions, resulting in the ~1000 W/m² at the surface.
+      </p>
+    </div>
+    
+    <h3 id="photon-energy">Photon Energy and Band Gap Matching</h3>
+    
+    <p>
+      A photon of light with wavelength λ has energy E given by Planck's equation:
+    </p>
+    
+    <div class="formula" id="photon-energy">
+      <p>
+        E = h c / λ
+      </p>
+      <p class="definition">
+        where h is Planck's constant (6.626×10<sup>-34</sup> J·s) and c is the speed of 
+        light (2.998×10<sup>8</sup> m/s).
+      </p>
+      <p class="formula-number">
+        In convenient units: E (eV) = 1240 / λ (nm)
+      </p>
+    </div>
+    
+    <p>
+      For a photon to be absorbed and contribute to electrical power generation, its 
+      energy must be greater than or equal to the band gap energy of the semiconductor:
+    </p>
+    
+    <div class="formula" id="absorption-condition">
+      <p>
+        E<sub>photon</sub> ≥ E<sub>g</sub>
+      </p>
+    </div>
+    
+    <p>
+      If E<sub>photon</sub> < E<sub>g</sub>, the photon passes through the material without 
+      being absorbed. If E<sub>photon</sub> > E<sub>g</sub>, the excess energy (E<sub>photon</sub> - 
+      E<sub>g</sub>) is typically lost as heat.
+    </p>
+    
+    <div class="example">
+      <div class="example-title">Example: Photon Energy Calculation</div>
+      
+      <p>
+        Calculate the energy of a photon with a wavelength of 500 nm. Is this photon 
+        capable of being absorbed by silicon (E<sub>g</sub> = 1.12 eV)?
+      </p>
+      
+      <p>
+        <strong>Solution:</strong><br/>
+        E = 1240 eV·nm / 500 nm = 2.48 eV
+      </p>
+      
+      <p>
+        Since 2.48 eV > 1.12 eV, the photon can be absorbed by silicon. The excess energy 
+        (2.48 - 1.12 = 1.36 eV) will be lost as heat.
+      </p>
+    </div>
+    
+    <h2 id="section-1-3">1.3 PV Cell Operation</h2>
+    
+    <p>
+      A photovoltaic cell converts light into electricity through a multi-step process 
+      that occurs within a <span class="term">p-n junction</span>.
+    </p>
+    
+    <h3 id="pn-junction">The P-N Junction</h3>
+    
+    <p>
+      A p-n junction is formed when n-type and p-type semiconductor materials are brought 
+      into intimate contact. At the junction, electrons from the n-side diffuse to the 
+      p-side, and holes from the p-side diffuse to the n-side. This creates a region 
+      depleted of free charge carriers called the <span class="term">depletion region</span>.
+    </p>
+    
+    <figure id="fig-pn-junction">
+      <img src="../../images/diagrams/pn-junction.svg" alt="P-N junction formation and depletion region"/>
+      <figcaption>
+        <strong>Figure 1-4:</strong> P-N Junction at Equilibrium
+        <p class="definition">
+          (a) Before contact, (b) After contact showing electron and hole diffusion, 
+          (c) Formation of depletion region with built-in electric field.
+        </p>
+      </figcaption>
+    </figure>
+    
+    <p>
+      The diffusion of charge carriers creates a built-in electric field across the 
+      junction, with the n-side having a positive charge (due to ionized donors) and the 
+      p-side having a negative charge (due to ionized acceptors). This electric field 
+      establishes a <span class="term">built-in potential</span> (V<sub>bi</sub>) that 
+      opposes further diffusion.
+    </p>
+    
+    <div class="formula" id="built-in-potential">
+      <p>
+        V<sub>bi</sub> = (k T / q) ln(N<sub>A</sub> N<sub>D</sub> / n<sub>i</sub><sup>2</sup>)
+      </p>
+      <p class="definition">
+        where N<sub>A</sub> and N<sub>D</sub> are the acceptor and donor concentrations, 
+        respectively, and q is the elementary charge (1.602×10<sup>-19</sup> C).
+      </p>
+    </div>
+    
+    <h3 id="photogeneration">Photon Absorption and Charge Generation</h3>
+    
+    <p>
+      When a photon with energy greater than E<sub>g</sub> is absorbed in the semiconductor:
+    </p>
+    
+    <ol>
+      <li>
+        An electron is excited from the valence band to the conduction band, leaving 
+        behind a hole in the valence band.
+      </li>
+      <li>
+        The electron-hole pair (EHP) is created. The pair will eventually recombine 
+        unless the carriers are separated.
+      </li>
+      <li>
+        In a p-n junction, the built-in electric field separates the electron (which 
+        moves to the n-side) and the hole (which moves to the p-side).
+      </li>
+      <li>
+        If the p-n junction is connected to an external circuit, the separated charges 
+        can flow through the circuit, creating a current.
+      </li>
+    </ol>
+    
+    <p>
+      This process is the fundamental mechanism of <span class="term">photovoltaic 
+      conversion</span>.
+    </p>
+    
+    <h3 id="carrier-separation">Carrier Separation and Collection</h3>
+    
+    <p>
+      Not all absorbed photons result in useful electrical power. Several loss mechanisms 
+      reduce the efficiency of PV cells:
+    </p>
+    
+    <ul>
+      <li>
+        <strong>Recombination:</strong> Electron-hole pairs may recombine before being 
+        separated by the junction field. Recombination can occur through various 
+        mechanisms including radiative, Shockley-Read-Hall, and Auger processes.
+      </li>
+      <li>
+        <strong>Photons with insufficient energy:</strong> Photons with energy less than E<sub>g</sub> 
+        are not absorbed.
+      </li>
+      <li>
+        <strong>Excess photon energy:</strong> Photons with energy greater than E<sub>g</sub> 
+        lose the excess energy as heat (thermalization).
+      </li>
+      <li>
+        <strong>Resistive losses:</strong> Current flowing through the semiconductor and 
+        external circuit encounters resistance, resulting in I<sup>2</sup>R losses.
+      </li>
+      <li>
+        <strong>Reflection:</strong> Some incident light is reflected from the cell surface 
+        and not absorbed.
+      </li>
+    </ul>
+    
+    <h2 id="section-1-4">1.4 Efficiency Limits</h2>
+    
+    <p>
+      The <span class="term">power conversion efficiency</span> (η) of a PV cell is defined 
+      as the ratio of electrical power output to incident optical power input:
+    </p>
+    
+    <div class="formula" id="efficiency-definition">
+      <p>
+        η = (P<sub>out</sub> / P<sub>in</sub>) × 100%
+      </p>
+      <p class="definition">
+        where P<sub>out</sub> is the maximum electrical power output and P<sub>in</sub> is the 
+        incident optical power.
+      </p>
+    </div>
+    
+    <h3 id="shockley-queisser">The Shockley-Queisser Limit</h3>
+    
+    <p>
+      In 1961, William Shockley and Hans Queisser calculated the theoretical maximum 
+      efficiency of a single-junction PV cell under unconcentrated sunlight. This 
+      <span class="term">Shockley-Queisser limit</span> (also called the 
+      <span class="term">detailed balance limit</span>) considers:
+    </p>
+    
+    <ol>
+      <li>
+        The solar spectrum as a blackbody at 5778 K
+      </li>
+      <li>
+        Radiative recombination as the only loss mechanism
+      </li>
+      <li>
+        Infinite mobility of charge carriers (no resistive losses)
+      </li>
+      <li>
+        No reflection losses
+      </li>
+    </ol>
+    
+    <figure id="fig-sq-limit">
+      <img src="../../images/charts/solar-efficiency.png" alt="Shockley-Queisser efficiency limit vs band gap energy"/>
+      <figcaption>
+        <strong>Figure 1-5:</strong> Shockley-Queisser Limit as a Function of Band Gap
+        <p class="definition">
+          The theoretical maximum efficiency for a single-junction PV cell under 
+          unconcentrated AM1.5 sunlight. The peak efficiency of ~33.7% occurs at a 
+          band gap of approximately 1.34 eV.
+        </p>
+      </figcaption>
+    </figure>
+    
+    <p>
+      The Shockley-Queisser analysis shows that for an optimal band gap of ~1.34 eV, 
+      the maximum theoretical efficiency is approximately 33.7%. Real PV cells have 
+      efficiencies below this limit due to additional loss mechanisms not considered 
+      in the ideal case.
+    </p>
+    
+    <p>
+      For silicon (E<sub>g</sub> = 1.12 eV), the Shockley-Queisser limit is approximately 
+      29%. The current world record efficiency for silicon solar cells is 26.8% 
+      (Kaneka Corporation, 2022), approaching this theoretical limit.
+    </p>
+    
+    <h3 id="overcoming-sq">Overcoming the Shockley-Queisser Limit</h3>
+    
+    <p>
+      Several approaches can exceed the Shockley-Queisser limit for single-junction cells:
+    </p>
+    
+    <dl>
+      <dt>Multi-junction cells</dt>
+      <dd>
+        Stack multiple PV cells with different band gaps, each optimized for a different 
+        portion of the solar spectrum. Theoretical efficiency under concentrated 
+        sunlight exceeds 86% for an infinite stack.
+      </dd>
+      
+      <dt>Hot carrier cells</dt>
+      <dd>
+        Harvest the excess energy of hot carriers (electrons and holes with energy 
+        greater than E<sub>g</sub>) before they thermalize, potentially adding several 
+        percentage points to efficiency.
+      </dd>
+      
+      <dt>Multi-exciton generation</dt>
+      <dd>
+        In some materials (particularly quantum dots), a single high-energy photon can 
+        generate multiple electron-hole pairs, increasing the quantum efficiency above 100%.
+      </dd>
+      
+      <dt>Up- and down-conversion</dt>
+      <dd>
+        Convert photons with energy below E<sub>g</sub> to higher energy photons that can be 
+        absorbed (up-conversion), or split high-energy photons into multiple lower-energy 
+        photons (down-conversion).
+      </dd>
+    </dl>
+    
+    <div class="warning">
+      <span class="warning-title">Practical Considerations</span>
+      <p>
+        While these approaches can theoretically exceed the Shockley-Queisser limit, 
+        they introduce additional complexity and cost. Most commercial PV systems 
+        continue to use single-junction silicon cells, which offer the best combination 
+        of efficiency, reliability, and cost-effectiveness for terrestrial applications.
+      </p>
+    </div>
+    
+    <h2 id="chapter-summary">Chapter Summary</h2>
+    
+    <p>
+      This chapter has introduced the fundamental physics of photovoltaic energy conversion:
+    </p>
+    
+    <ul>
+      <li>
+        Semiconductor materials have energy bands separated by a band gap (E<sub>g</sub>), 
+        which determines their electrical properties.
+      </li>
+      <li>
+        Doping with impurities (n-type and p-type) allows control of semiconductor 
+        conductivity.
+      </li>
+      <li>
+        The p-n junction creates a built-in electric field that separates photon-generated 
+        electron-hole pairs.
+      </li>
+      <li>
+        Photon absorption requires E<sub>photon</sub> ≥ E<sub>g</sub>, with excess energy lost 
+        as heat.
+      </li>
+      <li>
+        The Shockley-Queisser limit (~33.7%) defines the maximum theoretical efficiency 
+        for single-junction PV cells under unconcentrated sunlight.
+      </li>
+      <li>
+        Multiple approaches exist to potentially exceed this limit, though most commercial 
+        systems use single-junction silicon cells.
+      </li>
+    </ul>
+    
+    <h2 id="review-questions">Review Questions</h2>
+    
+    <ol>
+      <li>
+        Explain the difference between intrinsic and extrinsic semiconductors. What is 
+        doping and why is it important for PV cells?
+      </li>
+      <li>
+        Calculate the energy of photons with wavelengths of 400 nm, 600 nm, and 800 nm. 
+        Which of these can be absorbed by silicon (E<sub>g</sub> = 1.12 eV)?
+      </li>
+      <li>
+        Describe the process of carrier generation, separation, and collection in a p-n 
+        junction PV cell.
+      </li>
+      <li>
+        Why does the Shockley-Queisser limit exist? What are the main loss mechanisms 
+        it considers?
+      </li>
+      <li>
+        A certain PV material has a band gap of 1.5 eV. What is the maximum theoretical 
+        efficiency for a single-junction cell made from this material under the 
+        Shockley-Queisser analysis?
+      </li>
+      <li>
+        How do multi-junction cells overcome the Shockley-Queisser limit?
+      </li>
+    </ol>
+    
+    <h2 id="references">References</h2>
+    
+    <ol>
+      <li>
+        Shockley, W., & Queisser, H. J. (1961). Detailed Balance Limit of Efficiency of p-n 
+        Junction Solar Cells. <em>Journal of Applied Physics</em>, 32(3), 510-519.
+      </li>
+      <li>
+        Green, M. A. (2009). Solar Cells: Operating Principles, Technology and System Applications. 
+        Prentice Hall.
+      </li>
+      <li>
+        Nelson, J. (2003). The Physics of Solar Cells. Imperial College Press.
+      </li>
+      <li>
+        Honsberg, C., & Bowden, S. (2022). PVCDROM: Photovoltaic Device. 
+        https://pvcdrom.pveducation.org/
+      </li>
+    </ol>
+  </main>
+</body>
+</html>

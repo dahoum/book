@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Chapter 2: Solar Panel Technologies</title>
+  <link rel="stylesheet" type="text/css" href="../../styles/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../../styles/epub.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <main>
+    <h1 id="chapter2" class="chapter-title">
+      <span class="chapter-number">Chapter 2</span>: Solar Panel Technologies
+    </h1>
+    
+    <div class="chapter-intro">
+      <p>
+        Solar photovoltaic technology has evolved dramatically since the first practical 
+        silicon cells were developed in the 1950s. Today, a diverse range of PV technologies 
+        exists, each with unique characteristics, advantages, and ideal applications. This 
+        chapter surveys the major solar panel technologies, from well-established crystalline 
+        silicon to emerging thin-film and next-generation approaches.
+      </p>
+    </div>
+    
+    <h2 id="section-2-1">2.1 Monocrystalline Silicon</h2>
+    
+    <p>
+      Monocrystalline silicon (mono-Si) solar cells are made from a single, continuous 
+      crystal structure. This technology currently dominates the global PV market due to 
+      its high efficiency and proven reliability.
+    </p>
+    
+    <h3 id="manufacturing-process">Manufacturing Process</h3>
+    
+    <p>
+      The production of monocrystalline silicon cells begins with electronic-grade silicon 
+      (EG-Si), which is purified to 99.9999999% (9N) purity. The most common method for 
+      growing single-crystal silicon is the <span class="term">Czochralski process</span>:
+    </p>
+    
+    <ol>
+      <li>
+        Electronic-grade silicon is melted in a quartz crucible at approximately 1420°C.
+      </li>
+      <li>
+        A precisely oriented seed crystal is dipped into the molten silicon and slowly 
+        withdrawn while being rotated.
+      </li>
+      <li>
+        As the seed is withdrawn, the molten silicon solidifies onto the seed, maintaining 
+        the single-crystal structure.
+      </li>
+      <li>
+        The resulting ingot, typically 200-450 mm in diameter and several meters long, is 
+        then sliced into thin wafers (150-200 µm thick).
+      </li>
+    </ol>
+    
+    <p>
+      Alternative methods include the float-zone (FZ) process, which produces even higher 
+      purity silicon without a crucible, though at higher cost.
+    </p>
+    
+    <figure id="fig-mono-silicon">
+      <img src="../../images/charts/solar-efficiency.png" alt="Monocrystalline silicon wafer production process"/>
+      <figcaption>
+        <strong>Figure 2-1:</strong> Czochralski Process for Monocrystalline Silicon Ingot Growth
+      </figcaption>
+    </figure>
+    
+    <h3 id="cell-structure">Cell Structure and Design</h3>
+    
+    <p>
+      Monocrystalline silicon solar cells typically have the following structure:
+    </p>
+    
+    <div class="figure-group">
+      <figure id="fig-cell-cross-section">
+        <img src="../../images/diagrams/pv-cell-diagram.svg" alt="Cross-sectional view of a monocrystalline silicon solar cell"/>
+        <figcaption>
+          <strong>Figure 2-2:</strong> Monocrystalline Silicon Solar Cell Cross-Section
+        </figcaption>
+      </figure>
+      
+      <figure id="fig-cell-top">
+        <img src="../../images/diagrams/pv-cell-top.svg" alt="Top view showing grid pattern and busbars"/>
+        <figcaption>
+          <strong>Figure 2-2b:</strong> Cell Top View with Contact Grid
+        </figcaption>
+      </figure>
+    </div>
+    
+    <p>
+      The front surface of the cell features:
+    </p>
+    
+    <ul>
+      <li>
+        <strong>Anti-reflection coating (ARC):</strong> Typically silicon nitride (SiN<sub>x</sub>) 
+        with a refractive index of ~2.0, designed to minimize reflection losses across the 
+        solar spectrum.
+      </li>
+      <li>
+        <strong>Front contact grid:</strong> Silver (Ag) finger electrodes that collect 
+        current while minimizing shading of the cell surface. Typical grid patterns use 
+        3-5 busbars with numerous finer fingers.
+      </li>
+      <li>
+        <strong>Emitter:</strong> Heavily doped n+ layer (phosphorus-doped) that forms the 
+        p-n junction with the p-type base.
+      </li>
+      <li>
+        <strong>Base:</strong> p-type silicon substrate (boron-doped) that forms the bulk 
+        of the cell.
+      </li>
+      <li>
+        <strong>Back contact:</strong> Aluminum (Al) layer that covers the entire rear 
+        surface, providing good electrical contact and reflecting unabsorbed light back 
+        into the cell (back surface field effect).
+      </li>
+    </ul>
+    
+    <h2 id="section-2-2">2.2 Polycrystalline Silicon</h2>
+    
+    <p>
+      Polycrystalline silicon (poly-Si) cells, also known as multicrystalline silicon, are 
+      made from multiple silicon crystals rather than a single crystal. This technology 
+      offers a more economical alternative to monocrystalline silicon with slightly lower 
+      efficiency.
+    </p>
+    
+    <h3 id="manufacturing-poly">Manufacturing Process</h3>
+    
+    <p>
+      The production of polycrystalline silicon typically uses the <span class="term">casting 
+      method</span>:
+    </p>
+    
+    <ol>
+      <li>
+        Electronic-grade silicon is melted in a quartz crucible.
+      </li>
+      <li>
+        The molten silicon is directionally solidified, with a temperature gradient causing 
+        crystal growth from the bottom up.
+      </li>
+      <li>
+        Controlled cooling produces a block of silicon with multiple columnar crystals, 
+        typically several centimeters across.
+      </li>
+      <li>
+        The solidified block is then cut into bricks and sliced into wafers.
+      </li>
+    </ol>
+    
+    <p>
+      Unlike the Czochralski process, casting does not require a seed crystal and can 
+      produce larger ingots (up to 1 m × 1 m in cross-section), reducing material costs.
+    </p>
+    
+    <div class="sidebar">
+      <div class="sidebar-title">Monocrystalline vs. Polycrystalline Silicon</div>
+      
+      <table id="tbl-mono-vs-poly">
+        <caption>Comparison of Mono-Si and Poly-Si Technologies</caption>
+        <thead>
+          <tr>
+            <th>Characteristic</th>
+            <th>Monocrystalline Silicon</th>
+            <th>Polycrystalline Silicon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Efficiency</td>
+            <td>22-24%</td>
+            <td>18-20%</td>
+          </tr>
+          <tr>
+            <td>Cost</td>
+            <td>Higher</td>
+            <td>Lower</td>
+          </tr>
+          <tr>
+            <td>Manufacturing</td>
+            <td>Czochralski/FZ process</td>
+            <td>Casting process</td>
+          </tr>
+          <tr>
+            <td>Appearance</td>
+            <td>Uniform dark blue/black</td>
+            <td>Blue with visible grain patterns</td>
+          </tr>
+          <tr>
+            <td>Temperature coefficient</td>
+            <td>-0.35%/°C</td>
+            <td>-0.40%/°C</td>
+          </tr>
+          <tr>
+            <td>Space efficiency</td>
+            <td>Higher (more power per area)</td>
+            <td>Lower</td>
+          </tr>
+          <tr>
+            <td>Market share (2025)</td>
+            <td>~55%</td>
+            <td>~35%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <h2 id="section-2-3">2.3 Thin-Film Technologies</h2>
+    
+    <p>
+      Thin-film solar cells use layers of photovoltaic material only a few micrometers 
+      thick, deposited on a substrate such as glass, metal, or plastic. This approach 
+      significantly reduces material usage and manufacturing costs compared to wafer-based 
+      crystalline silicon technologies.
+    </p>
+    
+    <p>
+      The three main types of thin-film PV technologies are:
+    </p>
+    
+    <h3 id="amorphous-silicon">Amorphous Silicon (a-Si)</h3>
+    
+    <p>
+      Amorphous silicon (a-Si) is a non-crystalline form of silicon where the atoms lack 
+      a periodic structure. Unlike crystalline silicon, a-Si can be deposited in thin 
+      layers using processes such as plasma-enhanced chemical vapor deposition (PECVD).
+    </p>
+    
+    <p>
+      <strong>Advantages:</strong>
+    </p>
+    <ul>
+      <li>Can be deposited on flexible substrates</li>
+      <li>Lower temperature coefficient than c-Si</li>
+      <li>Performs better in low-light conditions</li>
+      <li>Lower manufacturing cost</li>
+    </ul>
+    
+    <p>
+      <strong>Disadvantages:</strong>
+    </p>
+    <ul>
+      <li>Lower efficiency (6-10%)</li>
+      <li>Degradation under light exposure (Staebler-Wronski effect)</li>
+      <li>Larger area required for same power output</li>
+    </ul>
+    
+    <h3 id="cadmium-telluride">Cadmium Telluride (CdTe)</h3>
+    
+    <p>
+      Cadmium telluride (CdTe) is a compound semiconductor with a direct band gap of 
+      approximately 1.44 eV, which is close to the optimal value for solar energy conversion.
+      CdTe cells are typically produced using a sequence of deposition processes:
+    </p>
+    
+    <ol>
+      <li>
+        A thin layer of cadmium sulfide (CdS) is deposited on a glass substrate coated 
+        with transparent conducting oxide (TCO).
+      </li>
+      <li>
+        The CdTe layer is deposited using methods such as close-spaced sublimation (CSS) 
+        or vapor transport deposition (VTD).
+      </li>
+      <li>
+        A post-deposition treatment with cadmium chloride (CdCl<sub>2</sub>) improves 
+        the material properties.
+      </li>
+      <li>
+        Back contacts and interconnections are added to complete the module.
+      </li>
+    </ol>
+    
+    <p>
+      <strong>Advantages:</strong>
+    </p>
+    <ul>
+      <li>High absorption coefficient (only ~1 µm thick layer needed)</li>
+      <li>Module efficiencies exceeding 22% (First Solar record: 22.8% in 2022)</li>
+      <li>Low manufacturing cost</li>
+      <li>Scalable production</li>
+      <li>Good performance in high-temperature and low-light conditions</li>
+    </ul>
+    
+    <p>
+      <strong>Disadvantages:</strong>
+    </p>
+    <ul>
+      <li>Use of cadmium (a heavy metal) and tellurium (a rare element)</li>
+      <li>Recycling considerations for end-of-life modules</li>
+    </ul>
+    
+    <h3 id="cigs">Copper Indium Gallium Selenide (CIGS)</h3>
+    
+    <p>
+      CIGS cells use a compound semiconductor from the chalcopyrite family with the 
+      chemical formula CuIn<sub>x</sub>Ga<sub>(1-x)</sub>Se<sub>2</sub>. The band gap can be 
+      engineered by varying the In/Ga ratio, typically between 1.0 and 1.7 eV.
+    </p>
+    
+    <p>
+      CIGS deposition is typically performed using co-evaporation or sputtering followed 
+      by selenization. The process allows for flexible substrate materials, including 
+      polymer films.
+    </p>
+    
+    <p>
+      <strong>Advantages:</strong>
+    </p>
+    <ul>
+      <li>Highest efficiency among thin-film technologies (23.35% cell efficiency record)</li>
+      <li>Flexible and lightweight modules possible</li>
+      <li>Excellent performance in low-light conditions</li>
+      <li>Low temperature coefficient</li>
+    </ul>
+    
+    <p>
+      <strong>Disadvantages:</strong>
+    </p>
+    <ul>
+      <li>Complex manufacturing process</li>
+      <li>Use of indium (relatively rare) and gallium</li>
+      <li>Difficulty in uniform large-area deposition</li>
+    </ul>
+    
+    <figure id="fig-thin-film-comparison">
+      <img src="../../images/charts/solar-efficiency.png" alt="Comparison of thin-film technology efficiencies and market shares"/>
+      <figcaption>
+        <strong>Figure 2-3:</strong> Thin-Film Technology Comparison
+      </figcaption>
+    </figure>
+    
+    <h2 id="section-2-4">2.4 Perovskite Cells</h2>
+    
+    <p>
+      Perovskite solar cells represent one of the most exciting developments in PV 
+      technology in recent years. Named after the mineral perovskite (CaTiO<sub>3</sub>), 
+      these cells use organic-inorganic hybrid compounds with the general formula 
+      ABX<sub>3</sub>, where A and B are cations and X is an anion.
+    </p>
+    
+    <p>
+      The most commonly studied perovskite material for PV applications is 
+      methylammonium lead iodide (CH<sub>3</sub>NH<sub>3</sub>PbI<sub>3</sub>), which has a 
+      band gap of approximately 1.55 eV—close to the optimal value for solar energy 
+      conversion.
+    </p>
+    
+    <p>
+      <strong>Advantages:</strong>
+    </p>
+    <ul>
+      <li>High absorption coefficient (only ~0.5 µm thick layer needed)</li>
+      <li>Rapid efficiency improvements (from 3.8% in 2009 to 25.7% in 2023)</li>
+      <li>Tunable band gap through composition engineering</li>
+      <li>Potential for low-cost manufacturing (solution processing)</li>
+      <li>Compatibility with flexible substrates</li>
+      <li>Potential for multi-junction applications (tandem cells)</li>
+    </ul>
+    
+    <p>
+      <strong>Challenges:</strong>
+    </p>
+    <ul>
+      <li>
+        <strong>Stability:</strong> Sensitivity to moisture, oxygen, UV light, and 
+        temperature
+      </li>
+      <li>
+        <strong>Lead content:</strong> Most high-efficiency perovskites contain lead, 
+        raising environmental and toxicity concerns
+      </li>
+      <li>
+        <strong>Hysteresis:</strong> Anomalous behavior in current-voltage measurements 
+        that complicates characterization
+      </li>
+      <li>
+        <strong>Scalability:</strong> Difficulty in producing uniform, large-area films
+      </li>
+      <li>
+        <strong>Lifetime:</strong> Current devices have demonstrated lifetimes of hundreds 
+        to thousands of hours, far below the 25+ years required for commercial viability
+      </li>
+    </ul>
+    
+    <p>
+      Despite these challenges, perovskite technology is considered one of the most 
+      promising pathways to next-generation high-efficiency, low-cost PV.
+    </p>
+    
+    <h3 id="tandem-cells">Perovskite-Silicon Tandem Cells</h3>
+    
+    <p>
+      One of the most promising applications for perovskite cells is in tandem 
+      configurations with silicon cells. In a tandem (or multi-junction) cell, different 
+      PV materials are stacked to capture different portions of the solar spectrum more 
+      efficiently.
+    </p>
+    
+    <p>
+      In a perovskite-silicon tandem:
+    </p>
+    
+    <ul>
+      <li>
+        The perovskite cell (with a band gap of ~1.6-1.8 eV) captures high-energy photons 
+        in the blue and green portions of the spectrum.
+      </li>
+      <li>
+        The silicon cell (with a band gap of 1.12 eV) captures the remaining lower-energy 
+        photons in the red and infrared portions.
+      </li>
+      <li>
+        The two cells are connected in series, with the total voltage being the sum of 
+        the individual cell voltages.
+      </li>
+    </ul>
+    
+    <p>
+      Theoretical efficiency for such a tandem exceeds 40%, and laboratory devices have 
+      already demonstrated efficiencies over 33%, surpassing the efficiency of 
+      single-junction silicon cells.
+    </p>
+    
+    <div class="formula" id="tandem-efficiency">
+      <p>
+        Theoretical efficiency limit for perovskite-silicon tandem: ~43%
+      </p>
+      <p class="definition">
+        Current record (2025): 33.9% (Oxford PV)
+      </p>
+    </div>
+    
+    <h2 id="section-2-5">2.5 Bifacial Panels</h2>
+    
+    <p>
+      Bifacial solar panels are designed to capture sunlight from both the front and 
+      rear surfaces of the module. This is achieved through several key design features:
+    </p>
+    
+    <ul>
+      <li>
+        <strong>Double-glass construction:</strong> Both front and rear surfaces use 
+        tempered glass instead of the traditional backsheet.
+      </li>
+      <li>
+        <strong>Transparent back contact:</strong> The rear electrical contacts are made 
+        with transparent or semi-transparent materials.
+      </li>
+      <li>
+        <strong>Symmetric or asymmetric cell design:</strong> The solar cells themselves 
+        may be designed to collect light from both sides (bifacial cells) or the module 
+        may use conventional monofacial cells with a transparent rear surface.
+      </li>
+    </ul>
+    
+    <p>
+      The additional energy gain from the rear surface depends on several factors:
+    </p>
+    
+    <ul>
+      <li>
+        <strong>Albedo:</strong> The reflectivity of the ground surface. Snow, sand, and 
+        concrete have high albedo (70-90%), while grass and asphalt have lower albedo 
+        (20-30%).
+      </li>
+      <li>
+        <strong>Mounting height:</strong> Higher mounting allows more reflected light to 
+        reach the rear surface.
+      </li>
+      <li>
+        <strong>Row spacing:</strong> Adequate spacing between rows prevents shading of 
+        the rear surfaces.
+      </li>
+      <li>
+        <strong>Module design:</strong> The bifaciality factor (ratio of rear to front 
+        efficiency) of the module.
+      </li>
+    </ul>
+    
+    <p>
+      Typical bifacial gain (the percentage increase in energy yield compared to 
+      monofacial modules) ranges from 5% to 20%, depending on these factors. In optimal 
+      conditions with high albedo and proper system design, bifacial gains can exceed 30%.
+    </p>
+    
+    <figure id="fig-bifacial">
+      <img src="../../images/charts/solar-growth.png" alt="Bifacial solar panel installation showing rear-side illumination"/>
+      <figcaption>
+        <strong>Figure 2-4:</strong> Bifacial Solar Panel Installation
+        <p class="definition">
+          Bifacial panels mounted on a tracker system with reflective ground surface, 
+          maximizing rear-side illumination.
+        </p>
+      </figcaption>
+    </figure>
+    
+    <table id="tbl-pv-efficiency" class="responsive-table">
+      <caption>Comparison of Solar Panel Technologies</caption>
+      <thead>
+        <tr>
+          <th>Technology</th>
+          <th>Efficiency (Cell)</th>
+          <th>Efficiency (Module)</th>
+          <th>Cost (USD/W)</th>
+          <th>Market Share (2025)</th>
+          <th>Key Applications</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monocrystalline Silicon</td>
+          <td>22-24%</td>
+          <td>19-22%</td>
+          <td>0.20-0.30</td>
+          <td>~55%</td>
+          <td>Utility, Residential, Commercial</td>
+        </tr>
+        <tr>
+          <td>Polycrystalline Silicon</td>
+          <td>18-20%</td>
+          <td>16-18%</td>
+          <td>0.18-0.25</td>
+          <td>~35%</td>
+          <td>Utility, Commercial</td>
+        </tr>
+        <tr>
+          <td>Amorphous Silicon</td>
+          <td>6-10%</td>
+          <td>5-8%</td>
+          <td>0.30-0.50</td>
+          <td>&lt;1%</td>
+          <td>Consumer electronics, BIPV</td>
+        </tr>
+        <tr>
+          <td>Cadmium Telluride (CdTe)</td>
+          <td>22-23%</td>
+          <td>18-20%</td>
+          <td>0.20-0.28</td>
+          <td>~10%</td>
+          <td>Utility-scale</td>
+        </tr>
+        <tr>
+          <td>CIGS</td>
+          <td>23-24%</td>
+          <td>18-20%</td>
+          <td>0.25-0.35</td>
+          <td>&lt;1%</td>
+          <td>Flexible, BIPV</td>
+        </tr>
+        <tr>
+          <td>Perovskite</td>
+          <td>25-26%</td>
+          <td>20-22%</td>
+          <td>N/A (R&D)</td>
+          <td>~0%</td>
+          <td>Emerging, Tandem</td>
+        </tr>
+        <tr>
+          <td>Perovskite/Si Tandem</td>
+          <td>33-34%</td>
+          <td>28-30%</td>
+          <td>N/A (Early commercial)</td>
+          <td>&lt;0.1%</td>
+          <td>High-value applications</td>
+        </tr>
+        <tr>
+          <td>Bifacial Silicon</td>
+          <td>22-24%</td>
+          <td>19-22%</td>
+          <td>0.25-0.35</td>
+          <td>~10%</td>
+          <td>Utility, Ground-mounted</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h2 id="chapter-summary">Chapter Summary</h2>
+    
+    <p>
+      This chapter has surveyed the major solar panel technologies, each with unique 
+      characteristics and applications:
+    </p>
+    
+    <ul>
+      <li>
+        <strong>Monocrystalline silicon:</strong> Highest efficiency, most established 
+        technology, dominant in the market.
+      </li>
+      <li>
+        <strong>Polycrystalline silicon:</strong> Lower cost alternative with slightly lower 
+        efficiency, still widely used.
+      </li>
+      <li>
+        <strong>Thin-film technologies:</strong> a-Si, CdTe, and CIGS offer lower material 
+        usage and manufacturing costs, with varying efficiencies and market presence.
+      </li>
+      <li>
+        <strong>Perovskite:</strong> Rapidly advancing technology with high efficiency 
+        potential, particularly in tandem configurations with silicon.
+      </li>
+      <li>
+        <strong>Bifacial:</strong> Panels that capture light from both sides, providing 
+        additional energy yield in appropriate installations.
+      </li>
+    </ul>
+    
+    <p>
+      The choice of technology depends on factors such as cost, efficiency requirements, 
+      installation environment, and specific application needs. Crystalline silicon 
+      (both mono and poly) currently dominates the market, but thin-film and tandem 
+      technologies are gaining ground in specific niches and for future applications.
+    </p>
+    
+    <h2 id="review-questions">Review Questions</h2>
+    
+    <ol>
+      <li>
+        Compare and contrast the Czochralski and casting methods for silicon wafer 
+        production. What are the advantages and disadvantages of each?
+      </li>
+      <li>
+        Explain why monocrystalline silicon cells typically have higher efficiency than 
+        polycrystalline silicon cells.
+      </li>
+      <li>
+        What is the Staebler-Wronski effect? How does it affect amorphous silicon solar 
+        cells?
+      </li>
+      <li>
+        Describe the structure of a CdTe thin-film solar module. What are the advantages 
+        of CdTe technology?
+      </li>
+      <li>
+        Why is the band gap of perovskite materials (CH<sub>3</sub>NH<sub>3</sub>PbI<sub>3</sub>) 
+        particularly well-suited for solar applications?
+      </li>
+      <li>
+        How do tandem solar cells achieve higher efficiency than single-junction cells?
+        What are the challenges in manufacturing tandem cells?
+      </li>
+      <li>
+        What is bifacial gain? What factors affect the amount of additional energy that 
+        bifacial panels can produce?
+      </li>
+      <li>
+        For a ground-mounted PV system with bifacial panels, high albedo ground cover, 
+        and optimal row spacing, what range of bifacial gain would you expect?
+      </li>
+    </ol>
+    
+    <h2 id="references">References</h2>
+    
+    <ol>
+      <li>
+        Green, M. A. (2009). <em>Solar Cells: Operating Principles, Technology and System 
+        Applications.</em> Prentice Hall.
+      </li>
+      <li>
+        Shah, A., et al. (1999). Thin-film silicon solar cells. <em>Progress in Photovoltaics.</em>
+      </li>
+      <li>
+        First Solar. (2022). CdTe Technology White Paper.
+      </li>
+      <li>
+        NREL. (2023). Best Research-Cell Efficiency Chart. 
+        https://www.nrel.gov/pv/cell-efficiency.html
+      </li>
+      <li>
+        Oxford PV. (2023). Perovskite Solar Cell Technology.
+      </li>
+    </ol>
+  </main>
+</body>
+</html>

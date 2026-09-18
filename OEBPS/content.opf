@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" 
+         unique-identifier="bookid" prefix="ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/1.0/">
+  
+  <!-- ========================================
+       METADATA
+       ======================================== -->
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" 
+            xmlns:dcterms="http://purl.org/dc/terms/" 
+            xmlns:opf="http://www.idpf.org/2007/opf">
+    
+    <!-- Identifier -->
+    <dc:identifier id="bookid">urn:uuid:RENEWABLE-ENERGY-TECH-BOOK-001</dc:identifier>
+    
+    <!-- Title -->
+    <dc:title id="title">Renewable Energy: Technical Foundations and Applications</dc:title>
+    <meta refines="#title" property="title-type">main</meta>
+    
+    <!-- Alternative titles -->
+    <dc:title id="subtitle">Practical Guide for Professionals</dc:title>
+    <meta refines="#subtitle" property="title-type">subtitle</meta>
+    
+    <!-- Creator/Author -->
+    <dc:creator id="creator">IJ Verlag Technical Publications</dc:creator>
+    <meta refines="#creator" property="role" scheme="marc:relators">aut</meta>
+    
+    <!-- Contributors -->
+    <dc:contributor id="contrib-editor">Dr. Elena Solaris</dc:contributor>
+    <meta refines="#contrib-editor" property="role" scheme="marc:relators">edt</meta>
+    
+    <dc:contributor id="contrib-illustrator">Max Windler</dc:contributor>
+    <meta refines="#contrib-illustrator" property="role" scheme="marc:relators">ill</meta>
+    
+    <!-- Language -->
+    <dc:language>en-US</dc:language>
+    
+    <!-- Date -->
+    <dc:date>2026-09-17</dc:date>
+    <meta property="dcterms:modified">2026-09-17T00:00:00Z</meta>
+    
+    <!-- Publisher -->
+    <dc:publisher>IJ Verlag</dc:publisher>
+    
+    <!-- Description -->
+    <dc:description>A technical deep-dive into renewable energy systems, covering fundamental principles, engineering implementations, economic analysis, and future technologies. Structured as a comprehensive reference with detailed charts, diagrams, and real-world case studies.</dc:description>
+    
+    <!-- Subjects/Keywords -->
+    <dc:subject>Renewable Energy</dc:subject>
+    <dc:subject>Solar Power</dc:subject>
+    <dc:subject>Wind Energy</dc:subject>
+    <dc:subject>Hydropower</dc:subject>
+    <dc:subject>Energy Storage</dc:subject>
+    <dc:subject>Sustainable Technology</dc:subject>
+    <dc:subject>Engineering</dc:subject>
+    
+    <!-- Rights -->
+    <dc:rights>Copyright (c) 2026 IJ Verlag. All rights reserved.</dc:rights>
+    
+    <!-- Format -->
+    <meta property="dcterms:format">EPUB 3.0</meta>
+    
+    <!-- Cover -->
+    <meta name="cover" content="cover-image"/>
+    
+    <!-- Reading progression -->
+    <meta property="rendition:flow">auto</meta>
+    <meta property="rendition:layout">reflowable</meta>
+    <meta property="rendition:orientation">auto</meta>
+    <meta property="rendition:spread">auto</meta>
+    
+    <!-- iBooks specific -->
+    <meta property="ibooks:version">1.0</meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    
+    <!-- Accessibility -->
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityFeature">structuredNavigation</meta>
+    <meta property="schema:accessibilityHazard">none</meta>
+  </metadata>
+  
+  <!-- ========================================
+       MANIFEST - All files in the EPUB
+       ======================================== -->
+  <manifest>
+    
+    <!-- Navigation and TOC -->
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="toc" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    
+    <!-- Cover -->
+    <item id="cover-image" href="images/cover.svg" media-type="image/svg+xml" properties="cover-image"/>
+    <item id="cover-xhtml" href="content/cover.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Stylesheets -->
+    <item id="css-main" href="styles/main.css" media-type="text/css"/>
+    <item id="css-epub" href="styles/epub.css" media-type="text/css"/>
+    
+    <!-- Introduction -->
+    <item id="intro" href="content/introduction.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Sub-Book 1: Solar Energy -->
+    <item id="sb1-intro" href="content/subbook1/subbook1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb1-ch1" href="content/subbook1/chapter1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb1-ch2" href="content/subbook1/chapter2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb1-ch3" href="content/subbook1/chapter3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb1-ch4" href="content/subbook1/chapter4.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Sub-Book 2: Wind Energy -->
+    <item id="sb2-intro" href="content/subbook2/subbook2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb2-ch1" href="content/subbook2/chapter1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb2-ch2" href="content/subbook2/chapter2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb2-ch3" href="content/subbook2/chapter3.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Sub-Book 3: Energy Storage & Grid Integration -->
+    <item id="sb3-intro" href="content/subbook3/subbook3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb3-ch1" href="content/subbook3/chapter1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb3-ch2" href="content/subbook3/chapter2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb3-ch3" href="content/subbook3/chapter3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="sb3-ch4" href="content/subbook3/chapter4.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Conclusion -->
+    <item id="conclusion" href="content/conclusion.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Appendix -->
+    <item id="appendix" href="content/appendix.xhtml" media-type="application/xhtml+xml"/>
+    
+    <!-- Images: Charts -->
+    <item id="img-solar-growth" href="images/charts/solar-growth.svg" media-type="image/svg+xml"/>
+    <item id="img-solar-efficiency" href="images/charts/solar-efficiency.svg" media-type="image/svg+xml"/>
+    <item id="img-wind-capacity" href="images/charts/wind-capacity.svg" media-type="image/svg+xml"/>
+    <item id="img-wind-turbine-sizes" href="images/charts/wind-turbine-sizes.svg" media-type="image/svg+xml"/>
+    <item id="img-storage-costs" href="images/charts/storage-costs.svg" media-type="image/svg+xml"/>
+    <item id="img-grid-penetration" href="images/charts/grid-penetration.svg" media-type="image/svg+xml"/>
+    <item id="img-renewable-mix" href="images/charts/renewable-mix.svg" media-type="image/svg+xml"/>
+    
+    <!-- Images: Diagrams -->
+    <item id="img-pv-cell" href="images/diagrams/pv-cell-diagram.svg" media-type="image/svg+xml"/>
+    <item id="img-wind-turbine" href="images/diagrams/wind-turbine-diagram.svg" media-type="image/svg+xml"/>
+    <item id="img-battery-types" href="images/diagrams/battery-types.svg" media-type="image/svg+xml"/>
+    <item id="img-smart-grid" href="images/diagrams/smart-grid.svg" media-type="image/svg+xml"/>
+    
+
+  </manifest>
+  
+  <!-- ========================================
+       SPINE - Reading order
+       ======================================== -->
+  <spine>
+    <!-- Cover -->
+    <itemref idref="cover-xhtml" linear="no"/>
+    
+    <!-- Front matter -->
+    <itemref idref="intro"/>
+    
+    <!-- Sub-Book 1: Solar Energy -->
+    <itemref idref="sb1-intro"/>
+    <itemref idref="sb1-ch1"/>
+    <itemref idref="sb1-ch2"/>
+    <itemref idref="sb1-ch3"/>
+    <itemref idref="sb1-ch4"/>
+    
+    <!-- Sub-Book 2: Wind Energy -->
+    <itemref idref="sb2-intro"/>
+    <itemref idref="sb2-ch1"/>
+    <itemref idref="sb2-ch2"/>
+    <itemref idref="sb2-ch3"/>
+    
+    <!-- Sub-Book 3: Energy Storage & Grid Integration -->
+    <itemref idref="sb3-intro"/>
+    <itemref idref="sb3-ch1"/>
+    <itemref idref="sb3-ch2"/>
+    <itemref idref="sb3-ch3"/>
+    <itemref idref="sb3-ch4"/>
+    
+    <!-- Back matter -->
+    <itemref idref="conclusion"/>
+    <itemref idref="appendix"/>
+  </spine>
+  
+  <!-- ========================================
+       BINDINGS (optional for EPUB 3)
+       ======================================== -->
+  <bindings/>
+  
+</package>
